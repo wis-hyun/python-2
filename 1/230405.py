@@ -1,14 +1,13 @@
 #1번
-'''
+
 def ave_all(*args):
     result=0
     for i in args:
         result+=i
         a=result/len(args)
     return(a)
-
 ave_all(1,2,3,4,5)
-'''
+
 #2번
 '''
     #1
