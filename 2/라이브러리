@@ -1,0 +1,18 @@
+#diff
+from diff_match_patch import diff_match_patch
+
+before = 'LIFE IS SHORT'
+after ='LIFE IS LONG'
+
+dmp = diff_match_patch()
+diff = dmp.diff_main(before, after)
+dmp.diff_cleanupSemantic(diff)
+
+for d in diff:
+    print(d)
+
+#sympy
+import sympy
+x = sympy.symbols('x')
+f = sympy.Eq(x**2, 1)
+sympy.solve(f)
